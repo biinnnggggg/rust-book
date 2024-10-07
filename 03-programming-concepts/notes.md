@@ -37,3 +37,47 @@ spaces = spaces.len(); // type: usize
 - Rust is statically typed. It must know the types of all variables at **compile time**.
 - Rust has type inference.
 - When many types are possible, we must add type annotations so the compiler has sufficient information to infer the type correctly.
+
+### Scalar Types
+
+- Represents a single value
+- Rust has four primary scalar types: integers, floating-point numbers, booleans, and characters.
+
+#### Integer Types
+
+- `u32`: unsigned integer, with 32 bits of space.
+- `i32`: signed integer, stored using **two's complement** representation.
+  
+| Length | Signed | Unsigned |
+| ------ | ------ | -------- |
+| 8-bit  | `i8`   | `u8`     |
+| 16-bit | `i16`  | `u16`    |
+| 32-bit | `i32`  | `u32`    |
+| 64-bit | `i64`  | `u64`    |
+| 128-bit| `i128` | `u128`   |
+| arch   | `isize`| `usize`  |
+
+- `isize` and `usize` types depend on the computer architecture.
+- Number literals that can be multiple numeric types allow a type suffix, such as `57u8`.
+- `i32` is the default integer type.
+- Integer overflow:
+  - compiling in debug mode will check for integer overflow that cause your program to *panic* at runtime.
+  - compiling in release mode with `--release` flag does not include check for overflow that cause panics. It handles overflow by performing two'scomplement wrpping.
+  - to handle overflow possibility explicitly, refer to the standard library.
+
+#### Floating-Point Types
+
+- Two types: `f32` and `f64`. Both are signed.
+- According to the iEEE-754 standard, `f32` is a single-precision float and `f64` has double precision.
+- `f64` is the default floating-point type.
+
+#### Boolean Type
+
+- Size: 1 byte.
+- Values: `true` or `false`
+
+#### Char Type
+
+- Specify `char` literals with single quotes as opposed to string literals, which use double quotes.
+- Size: 4 bytes.
+- Represents Unicode Scalar Value: `U+0000` to `U+D7FF` and `U+E000` to `U+10FFFF` inlusive.
