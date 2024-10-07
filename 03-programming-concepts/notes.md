@@ -31,3 +31,9 @@ let spaces = spaces.len();
 let mut spaces = "   ";
 spaces = spaces.len(); // type: usize
 ```
+
+## Data Types
+
+- Rust is statically typed. It must know the types of all variables at **compile time**.
+- Rust has type inference.
+- When many types are possible, we must add type annotations so the compiler has sufficient information to infer the type correctly.
