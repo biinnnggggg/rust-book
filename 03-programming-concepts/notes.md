@@ -15,4 +15,19 @@ runtime.
 - You can declare a new variable with the same name as a previous variable using
 `let` keyword again. `let x = x + 1;` for example.
 - The first variable is *shadowed* by the second.
-- Different from marking a variable as `mut`.
+- Different from marking a variable as `mut` as shadowing effectively creates
+a new variable.
+- This means that we can also change the **type** of the value but reuse the
+same name. For example
+
+```rust
+let spaces = "   ";
+let spaces = spaces.len();
+```
+
+- Using mutation does not work here as you are **not allowed** to mutate the type of a variable.
+
+```rust
+let mut spaces = "   ";
+spaces = spaces.len(); // type: usize
+```
