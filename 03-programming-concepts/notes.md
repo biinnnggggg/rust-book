@@ -104,3 +104,35 @@ spaces = spaces.len(); // type: usize
 - Useful when you want data allocated on the stack rather than the heap.
 - Access array elements by indexing: `array[i];`
 - Accessing an index that does not exist during runtime will cause Rust to **panic** and exit with an error message.
+
+## Functions
+
+- Declared by keyword `fn`.
+- Rust does not care where you define the function as long as it is in a scope that can *be seen* by the caller.
+- Function signatures require type declarations for each parameter.
+
+### Statements and Expressions
+
+- Rust is an expression-based language.
+- Statements: instructions that perform an action. Does not return a value. e.g. `let y = 6;`
+- Expressions: evaluate to a result. e.g. `another_function();`
+- Assignments do not return a value.
+- Calling functions and macros are expressions.
+- New scope blocks created with curly brackets are expressions.
+- Expressions do not include ending semicolons. Adding a semicolon turns it into a statement.
+- Functions can return values. Return type is indicated with `fn fname() -> type {}`.
+- Return early from function using `return` otherwise the function will return the last expression.
+
+## Control Flow
+
+- `if` expression conditions are strictly of type `boolean`.
+- All branches return types must be compatible.
+- `loop` expressions are used for repeating code blocks.
+  - `break` keyword indicates to exit the loop.
+    - loops can return a value after `break`.
+    - `return` can be used inside a loop and will always exit the current function.
+  - `continue` keyword indicates to start the next loop iteration.
+  - Loop labels `'loop_label: loop {...}` can be specified and used with `break` or `continue`.
+- Conditional loops: `while cond {...}`.
+  - `for` loops can be used to loop through elements of a collection.
+  - `Range`: generates numbers in sequence starting from one number and ending before another. `for num in (1..4) {...}`
