@@ -81,3 +81,26 @@ spaces = spaces.len(); // type: usize
 - Specify `char` literals with single quotes as opposed to string literals, which use double quotes.
 - Size: 4 bytes.
 - Represents Unicode Scalar Value: `U+0000` to `U+D7FF` and `U+E000` to `U+10FFFF` inlusive.
+
+### Compound Types
+
+- Group multiple scalars into one type.
+- Two primitive compound types: tuples and arrays.
+- Printing compound types: `println!("{:?}", compound);`
+  
+#### Tuple Type
+
+- Fixed length.
+- Each position in the tuple has a type, and these can be different.
+- Use pattern matching to destructure a tuple value.
+- Access tuple elements directly using the period `.` followed by the index.
+- A tuple without values is called a *unit*. This value and its corresponding type are both written `()` and represent an empty value of an empty return type.
+
+#### Array Type
+
+- Fixed length.
+- Every element has the same type.
+- Write values as a comma-separated list inside square brackets.
+- Useful when you want data allocated on the stack rather than the heap.
+- Access array elements by indexing: `array[i];`
+- Accessing an index that does not exist during runtime will cause Rust to **panic** and exit with an error message.
