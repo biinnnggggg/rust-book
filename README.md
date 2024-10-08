@@ -7,7 +7,7 @@ My work through of the Rust Book, with notes.
 - [Chapter 1 - Getting Started](/01-getting-started/notes.md)
 - [Chapter 2 - Programming a Guessing Game](/02-guessing-game/notes.md)
 - [Chapter 3 - Common Programming Concepts](/03-programming-concepts/notes.md)
-- Chapter 4 - Understanding Ownership
+- [Chapter 4 - Understanding Ownership](/04-ownership/notes.md)
 - Chapter 5 - Using Structs to Structure Related Data
 - Chapter 6 - Enums and PatternMatching
 - Chapter 7 - Managing Growing Projects with Packages, Crates, and Modules
