@@ -1,5 +1,7 @@
 # Chapter 3
 
+[Table of Contents](../README.md#table-of-contents)
+
 ## Constants
 
 - Constants are like immutable variables, but you must always annotate the type

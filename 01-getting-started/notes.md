@@ -1,5 +1,7 @@
 # Chapter 1
 
+[Table of Contents](../README.md#table-of-contents)
+
 - Learned how to install Rust.
 - `rustup`: command line tool for managing Rust versions and related tools.
 - `cargo`: build system and package manager. Handle dependencies and whatnot.

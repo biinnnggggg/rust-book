@@ -1,5 +1,7 @@
 # Chapter 2
 
+[Table of Contents](../README.md#table-of-contents)
+
 - In rust, variables are **immutable** by default.
 - To make a mutable variable, we write `mut` before the variable name.
 For example, `let mut bananas = 5;`.
