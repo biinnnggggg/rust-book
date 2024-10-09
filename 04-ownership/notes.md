@@ -13,6 +13,8 @@ checks.
 - There can only be one owner at a time.
 - When the owner goes out of scope, the value will be dropped.
 - Rust calls a function `drop` automatically at the end of a scope.
+- Returning values can transfer ownership.
+- References let us use values without transferring ownership.
 
 ### Double Free Error
 
